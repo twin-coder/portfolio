@@ -1,0 +1,156 @@
+// Containers
+.container {
+  // Sass syntax: how do I compile utilities.scss into a separate .css file ?
+  max-width: $max-width;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+// Categories
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-sports {
+  background-color: $sports-color;
+}
+
+.category-ent {
+  background-color: $ent-color;
+}
+
+.category-tech {
+  background-color: $tech-color;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: $dark-color;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.btn-light {
+  background-color: $light-color;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+}
+
+// Card
+.card {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+// Background
+.bg-dark {
+  background-color: $dark-color;
+  color: #fff;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+  color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff;
+}
+
+// Padding
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+// Padding
+.l-heading {
+  font-size: 3rem;
+}
+
+// Lists
+.list {
+
+  li {
+    padding: .5rem 0;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+
+    a:hover {
+      color: $primary-color !important;
+    }
+  }
+}
+
+// Inner page grid container
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+
+  > *:first-child {
+    grid-row: 1 / span 3;
+  }
+}
